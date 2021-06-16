@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bracket Data Display</title>
+    <meta charset=UTF-8 />
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    
+    <!-- create the scatter plot -->
+    <div id="scatterplot"></div>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src = "scatterPlot.js" type="module"></script>
+
+    <!-- create the 3D viewer  -->
+    <script src = "3dwindow.js" type="module"></script>
+    <canvas id="threejsCanvas" width=600 height=400></canvas>
+    <div id="modelInstructions">click and drag to explore the design</div>
+
+  </body>
+</html>

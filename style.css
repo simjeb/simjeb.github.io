@@ -1,0 +1,215 @@
+/*define global variables here*/
+/*:root {
+
+} */
+
+.item img {
+    width: 100%;
+    /* background-color: #212529 */
+}
+.carousel-indicators li {
+    background-color: white !important;
+    opacity: .5;
+		border: transparent !important;
+
+}
+
+.carousel-control {
+  width: 5% !important;
+}
+
+.carousel-indicators .active {
+    background-color: purple !important;
+		border: !important;
+}
+
+.container {
+  background-color: #212529
+}
+
+.bracketVIS{
+  background-color: #212529
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 2px;
+  font: 12px sans-serif;
+  /* background: lightsteelblue; */
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+	background: white;
+  z-index:10000;
+}
+
+/*scatter plot*/
+#scatterplot{
+	position: fixed;
+	bottom: 0;
+}
+.axisTitle{
+	font-size: 20px;
+  font-family: var(--bs-font-sans-serif)
+	fill: white;
+}
+
+.axisColor line{
+  stroke: white;
+}
+
+.axisColor path{
+  stroke: white;
+}
+
+.axisColor text{
+  fill: white;
+}
+
+.tick{
+	font-size: 13px;
+  font-family: var(--bs-font-sans-serif)
+  fill: white;
+}
+.dot{
+	opacity: 0.5;
+  cursor: pointer;
+	stroke: gray;
+	stroke-width: 1px;
+}
+.dot-selected{
+  opacity: 1;
+  cursor: pointer;
+  stroke: white;
+  stroke-width: 3px;
+}
+.imgTooltip{
+  width: 150px;
+  /*outline: 6px solid black;*/
+}
+.legendTitle{
+  position: absolute;
+  font-size: 20px;
+  fill: white;
+  font-family: var(--bs-font-sans-serif)
+}
+
+.legendLabel{
+  font-size: 13px;
+  font-family: var(--bs-font-sans-serif)
+}
+.dropDownFilter{
+  color: white;
+  font-size: 20px;
+  border: 0px;
+  outline: 0px;
+  background-color: #212529;
+  width: 250px;
+  position: absolute;
+}
+.dropDownFilter-selected {
+  background-color: red;
+}
+#modelInstructions {
+  color: white;
+  font-style: italic;
+  position: absolute;
+  top: 375px;
+  right: 150px;
+  width: 100%;
+  text-align: right;
+  z-index: 100;
+  display:block;
+  font-size: 15px;
+  font-family: var(--bs-font-sans-serif)
+}
+
+
+/*3d canvas*/
+#threejsCanvas{
+	/*border: 1px solid #000000;*/
+	position: fixed;
+	top: 0;
+	right: 0;
+  background-color: #212529
+  z-index:0;
+}
+
+/*Main Page*/
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+body {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  background-color: #212529
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* carousel styling */
+
+.col-sm-3 .text {
+  visibility: hidden;
+}
+
+.col-sm-3 img:hover {
+  background-color: white;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.col-sm-3:hover .text {
+  visibility: visible;
+  opacity: 1;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
