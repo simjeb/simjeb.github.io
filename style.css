@@ -90,6 +90,15 @@ div.tooltip {
   width: 150px;
   /*outline: 6px solid black;*/
 }
+.idTooltip{
+  width: 150px;
+  /*outline: 6px solid black;*/
+  /*text-anchor: middle;*/
+  font-size: 13px;
+  fill: white;
+  font-family: var(--bs-font-sans-serif)
+}
+
 .legendTitle{
   position: absolute;
   font-size: 20px;

@@ -79,9 +79,18 @@ d3.csv("data/all_bracket_metadata.csv", convertNumbers).then(function(data) {
       .attr('class', 'imgTooltip')
       .attr("x", x(d[xAxisColumn])-75)
       .attr("y", y(d[yAxisColumn])-125)
+
+      svg.append('text')
+      .text('id: '+d.id)
+      .attr('class', 'idTooltip')
+      .attr("text-anchor", 'middle')
+      .attr("x", x(d[xAxisColumn])+75)
+      .attr("y", y(d[yAxisColumn])-13)
     })
    .on("mouseout", function(d) {
     svg.selectAll('.imgTooltip')
+    .remove()
+    svg.selectAll('.idTooltip')
     .remove()
     })
    .on("click", function(d) {
@@ -113,12 +122,6 @@ d3.csv("data/all_bracket_metadata.csv", convertNumbers).then(function(data) {
       .attr("class", "axisColor")
       .attr('id', 'xAxis')
       .call(d3.axisBottom(x))
-    // .append("text")
-    //   .attr("class", "axisTitle")
-    //   .attr("x", width/2)
-    //   .attr("y", 40)
-    //   .style("text-anchor", "middle")
-    //   .text('Mass (kg)');
 
   // create a dropdown filter and add options dynamically
   d3.select('#scatterplot')
