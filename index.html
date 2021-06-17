@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.82.0">
-    <title>Structural Design Exploration</title>
+    <title>SimJEB: </title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
 
@@ -40,52 +40,38 @@
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
     <div>
-      <h3 class="float-md-start mb-0">Structural Design Explorer</h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
+      <h2 class="float-md-start mb-0">SimJEB: Simulated Jet Engine Bracket Dataset</h2>
+      <p>Eamon Whalen, Azariah Beyene, Caitlin Mueller</p>
+<!--       <nav class="nav nav-masthead justify-content-center float-md-end">
         <a class="nav-link" href="https://grabcad.com/challenges/ge-jet-engine-bracket-challenge">GE Challenge</a>
         <a class="nav-link" href="https://arxiv.org/abs/2105.03534">Paper</a>
         <a class="nav-link" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/XFUWJG">Data</a>
-      </nav>
+      </nav> -->
     </div>
   </header>
 
   <main class="px-3">
-    <h1>CAD and Machine Learning Possibilities</h1>
-    <br>
-    <p class="lead"> As we consider the impact of material usage on climate change, 
-      socially responsible engineers need to create products that use less material without sacrificing performance. 
-      Parallel to this, the rising capability of machine learning has allowed it to be a powerful tool to produce 
-      effienct structural designs across a variety of objectives. Here is an exploration of a CAD data set by the 
-      GE Jet Engine Bracket design competition. It reflects diverse, realistic and complex designs produced by contestants. 
-      The performace of these design across a variety of structural and material efficiency metrics has been quantified by 
-      Whalen, Beyene and Mueller in order to further the use of machine learning in application-focused contexts. 
-    </p>
+    <img src="teaser05_nobkr.png" alt="SimJEB dataset preview image" id="teaserImg">
+        <p class="lead"> The Simulated Jet Engine Bracket Dataset (SimJEB) is a collection of finite element simulations of crowdsourced engine bracket designs. This open dataset has several potential uses, including testing geometry processing and surrogate modeling algorithms, as well as studying structural design strategies.
+<br><br>
+The bracket designs originate from the "GE Jet Engine Bracket Challenge" hosted by GrabCAD.com in 2013 and have been cleaned, oriented, scaled, meshed, and simulated. Each entry has a corresponding CAD file, tetrahedral mesh, triangular surface mesh, and structural simulation results from four load cases.
 
-    <h1>Start Exploring</h1>
-    <br>
-    <p class="lead">
-      <b>Carousel View</b> provides a less technical visualization of the geometric data. Hovering over a braket image gives you 
-      info on the creator of the design. Clicking on a braket, takes you to the submission page for the design where you can 
-      download the geometry directly.       
     </p>
-
-    <p class="lead">
-      <b>Data View</b> allows the user to dig into strucutural simulation results and see how specific brackets perform on interactive plots.
-      Hovering over a data point gives you a preview of the design it corresponds to while clicking the point loads it in the 3D viewer that
-      users can manipulate with their mouse. Users can also click on the legend to filter the bracket designs by category and use the drop down
-      features on both the x and y axis to construct custom exploratory plots.
-    </p>
+<!--     <p class="lead"> The Simulated Jet Engine Bracket Dataset (SimJEB) is a collection of finite element simulations of crowdsourced engine bracket designs. The designs originate from the "GE Jet Engine Bracket Challenge" hosted by GrabCAD.com in 2013 and have been cleaned, oriented, scaled, meshed, and simulated. Each entry has a corresponding CAD file, tetrahedral mesh, triangular surface mesh, and structural simulation results from four load cases.
+    </p> -->
 
     <br>
     <p class="lead">
-      <a href="./carouselview.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Carousel View</a>
-      <a href="./dataview.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Data View</a>
+      <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JYJ094" class="btn btn-lg btn-secondary fw-bold border-white bg-white" target="_blank" rel="noopener noreferrer">Get the dataset</a>
+      <a href="https://sgp2021.github.io/" class="btn btn-lg btn-secondary fw-bold border-white bg-white" target="_blank" rel="noopener noreferrer">Read the paper</a>
+      <a href="./carouselview.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white" target="_blank" rel="noopener noreferrer">Browse the designs</a>
+      <a href="./dataview.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white" target="_blank" rel="noopener noreferrer">Explore the data</a>
     </p>
 
   </main>
 
   <footer class="mt-auto text-white-50">
-    <p>Visualization by Eamon Whalen, Bryan Ong, Ashley Hartwell</p>
+    <p>Website by Ashley Hartwell, Bryan Ong and Eamon Whalen</p>
   </footer>
 </div>
 
