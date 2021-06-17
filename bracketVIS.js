@@ -83,7 +83,8 @@ function loopGrid(){
 
       var div4 = document.createElement('div');
       div4.className = 'text';
-      var text = document.createTextNode("Designed By: "+ link.author);
+      // var text = document.createTextNode("Designed By: "+ link.author);
+      var text = document.createTextNode('id: '+index+'\n by: '+link.author);
       div4.appendChild(text);
       document.getElementById("col" + appendedIndex.toString()).appendChild(div4);
     }
@@ -110,7 +111,8 @@ function loopGrid(){
 
         var div4 = document.createElement('div');
         div4.className = 'text';
-        var text = document.createTextNode("Designed By: "+ link.author);
+        // var text = document.createTextNode("Designed By: "+ link.author);
+        var text = document.createTextNode('id: '+index+'\n by: '+link.author);
         div4.appendChild(text);
         document.getElementById("col" + appendedIndex.toString()).appendChild(div4);
       }
@@ -130,7 +132,8 @@ function loopGrid(){
 
         var div4 = document.createElement('div');
         div4.className = 'text';
-        var text = document.createTextNode("Designed By: "+ link.author);
+        // var text = document.createTextNode("Designed By: "+ link.author);
+        var text = document.createTextNode('id: '+index+'\n by: '+link.author);
         div4.appendChild(text);
         document.getElementById("col" + appendedIndex.toString()).appendChild(div4);
       }
