@@ -205,7 +205,7 @@ d3.csv("data/all_bracket_metadata.csv", convertNumbers).then(function(data) {
   
   //Clickable Legend
   const selmodel = SelectionModel();
-  var LEGEND_HEIGHT = 450
+  var LEGEND_HEIGHT = 330
   var legend = svg.selectAll(".legend")
     .data(color.domain())
     .enter()
