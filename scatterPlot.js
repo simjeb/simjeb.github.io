@@ -151,6 +151,7 @@ d3.csv("data/all_bracket_metadata.csv", convertNumbers).then(function(data) {
   // add the Y Axis
   svg.append("g")
       .attr("class", "axisColor")
+      .attr('id', 'yAxis')
       .call(d3.axisLeft(y))
     // .append("text")
     //   .attr("class", "axisTitle")
@@ -192,7 +193,7 @@ d3.csv("data/all_bracket_metadata.csv", convertNumbers).then(function(data) {
     svg.select('#xAxis')
       .call(d3.axisBottom(x))
     svg.select('#yAxis')
-      .call(d3.axisBottom(y))
+      .call(d3.axisLeft(y))
 
     svg.selectAll(".dot,.dot-selected")
       .data(data)
